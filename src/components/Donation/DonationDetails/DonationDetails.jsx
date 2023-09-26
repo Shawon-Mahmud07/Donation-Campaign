@@ -10,21 +10,23 @@ const DonationDetails = ({ donationCard }) => {
     card_bg,
     price,
   } = donationCard;
-  console.log(price);
   return (
     <div>
       <div
-        className="card   card-side  shadow-xl "
+        className="card flex flex-col md:flex-row card-side mx-3 md:mx-0  shadow-xl "
         style={{ backgroundColor: `${card_bg}` }}
       >
         <figure>
-          <img className="w-64 h-52" src={picture} />
+          <img
+            className="rounded-t-xl rounded-b-2xl md:rounded-t-none md:rounded-b-none h-40 md:w-64 md:h-52"
+            src={picture}
+          />
         </figure>
 
-        <div className="card-body">
+        <div className="card-body -ml-6 md:ml-0 -my-3 md:my-0 ">
           <div>
             <span
-              className=" text-sm p-1 rounded-sm font-medium f"
+              className=" text-sm p-1 rounded-sm font-medium "
               style={{
                 backgroundColor: `${category_bg}`,
                 color: `${text_button_bg}`,
@@ -34,7 +36,9 @@ const DonationDetails = ({ donationCard }) => {
             </span>
           </div>
           <div className=" ">
-            <p className=" text-xl font-semibold text-[#0B0B0B] ">{title}</p>
+            <p className="text-base md:text-xl font-semibold text-[#0B0B0B] ">
+              {title}
+            </p>
             <p
               className="text-base font-semibold"
               style={{
