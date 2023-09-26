@@ -30,10 +30,13 @@ const FeatureCardDetails = () => {
   };
 
   return (
-    <div className="w-full  md:w-4/5 px-4 md:mx-auto my-2 h-screen] ">
+    <div className="w-full px-4   my-4 h-screen] ">
       <div>
-        <div className="relative ">
-          <img className="h-auto md:h-96 w-full   rounded-md" src={picture} />
+        <div className="relative  ">
+          <img
+            className="h-auto md:h-[90vh]  w-full rounded-2xl"
+            src={picture}
+          />
           <button
             onClick={() => handleDonateClick()}
             className="z-10 absolute bottom-2 left-2 md:bottom-4 md:left-3 p-2 rounded-md text-white text-xs md:text-xl font-semibold"
@@ -41,7 +44,7 @@ const FeatureCardDetails = () => {
           >
             Donate $<span>{price}</span>
           </button>
-          <div className="z-0 absolute bottom-0 w-full h-12 md:h-20 bg-black opacity-70 rounded-sm"></div>
+          <div className="z-0 rounded-xl absolute bottom-0 w-full h-12 md:h-20 bg-black opacity-70 "></div>
         </div>{" "}
         <div className=" mt-3 space-y-3">
           <h1 className="text[#0B0B0B] font-bold text-xl md:text-4xl">

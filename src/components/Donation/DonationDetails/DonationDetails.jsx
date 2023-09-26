@@ -13,7 +13,7 @@ const DonationDetails = ({ donationCard }) => {
   return (
     <div>
       <div
-        className="card flex flex-col md:flex-row card-side mx-3 md:mx-0  shadow-xl "
+        className="card flex flex-col md:flex-row card-side mx-3 md:mx-0  shadow-xl  "
         style={{ backgroundColor: `${card_bg}` }}
       >
         <figure>
