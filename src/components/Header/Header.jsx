@@ -2,7 +2,7 @@ import Logo from "../../assets/Logo.png";
 import { NavLink } from "react-router-dom";
 const Header = () => (
   <div className="navbar flex-col md:flex-row bg-base-100">
-    <div className="flex-1 w-52 md:w-full pt-2 md:pt-0">
+    <div className="flex-1 w-56 md:w-full pt-2 md:pt-0">
       <img src={Logo} />
     </div>
 
