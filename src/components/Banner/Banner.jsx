@@ -13,9 +13,10 @@ const Banner = ({ cards }) => {
   };
   const handleClickBtn = () => {
     const searchValue = inputValue.toLowerCase();
+    const searchDataValues = searchValue.trim();
     // console.log(searchValue);
     const searchCards = cards.filter(
-      (card) => card.category.toLowerCase() === searchValue
+      (card) => card.category.toLowerCase() === searchDataValues
     );
     setObjData(searchCards);
     setAllCard(false);
