@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import { getDonationInfo } from "../../Utility/localStorage";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 
-const COLORS = ["#FF444A", "#00C49F"];
+const COLORS = ["#00C49F", "#FF444A"];
 
 const Statistics = () => {
   const staticData = useLoaderData();
@@ -55,14 +55,15 @@ const Statistics = () => {
         </PieChart>
       </ResponsiveContainer>
       <div className="flex flex-col pb-5 -mt-10 md:-m-0 md:flex-row justify-center items-center md:gap-3 ">
+        {" "}
         <div>
           <p className="text-[#0B0B0B] font-normal text-lg">Total Donation</p>
         </div>
-        <div className="w-16 rounded-sm h-2 bg-[#FF444A]"></div>
+        <div className="w-16 rounded-sm h-2 bg-[#FF444A]"> </div>
         <div>
           <p className="text-[#0B0B0B] font-normal text-lg">Your Donation</p>
         </div>
-        <div className="w-16 rounded-sm h-2 bg-[#00C49F]"></div>
+        <div className="w-16 rounded-sm h-2 bg-[#00C49F]"> </div>
       </div>
     </div>
   );
