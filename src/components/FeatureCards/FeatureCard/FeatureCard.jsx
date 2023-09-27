@@ -17,7 +17,7 @@ const FeatureCard = (card) => {
         className={` rounded-md flex max-w-[24rem] flex-col  mx-4 md:mx-0  shadow-md`}
         style={{ backgroundColor: `${card_bg}` }}
       >
-        <img className="w-full h-44 rounded-t-md" src={picture} />
+        <img className="w-full h-52 md:h-44 rounded-t-md" src={picture} />
 
         <div className="mt-3 pl-2 ">
           <span

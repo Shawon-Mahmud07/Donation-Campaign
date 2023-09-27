@@ -18,7 +18,7 @@ const DonationDetails = ({ donationCard }) => {
       >
         <figure>
           <img
-            className="rounded-t-xl rounded-b-2xl md:rounded-t-none md:rounded-b-none h-40 md:w-64 md:h-52"
+            className=" rounded-t-xl rounded-b-2xl md:rounded-t-none md:rounded-b-none  md:w-64 h-52"
             src={picture}
           />
         </figure>
