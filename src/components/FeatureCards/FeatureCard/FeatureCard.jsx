@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
-const FeatureCard = (card) => {
+const FeatureCard = ({ card }) => {
   const { id, title, picture, card_bg, category, text_button_bg, category_bg } =
-    card.card;
+    card;
 
   const navigate = useNavigate();
 
@@ -45,5 +45,7 @@ const FeatureCard = (card) => {
 
 FeatureCard.propTypes = {
   card: PropTypes.object.isRequired,
+  searchObjData: PropTypes.object.isRequired,
 };
+
 export default FeatureCard;
